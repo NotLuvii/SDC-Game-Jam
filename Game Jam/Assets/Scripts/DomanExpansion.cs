@@ -10,7 +10,7 @@ public class DomanExpansion : MonoBehaviour
     // Cooldown after the sphere is destroyed
     private float cooldownDuration = 25f;
     private float cooldownTimer = 0f;
-     public AudioClip domainExpansionSound;
+    public AudioClip[] domainExpansionSounds;
     private float timer = 0f;
     private bool attacksDisabled = true;
 
@@ -18,7 +18,6 @@ public class DomanExpansion : MonoBehaviour
     {
         // Add an AudioSource component to the GameObject and set the audio clip
         AudioSource audioSource = gameObject.AddComponent<AudioSource>();
-        audioSource.clip = domainExpansionSound;
     }
 
     // Update is called once per frame
@@ -60,8 +59,11 @@ public class DomanExpansion : MonoBehaviour
     // Function to expand the domain
     void ExpandDomain()
     {
-        AudioSource audioSource = GetComponent<AudioSource>();
-        audioSource.PlayOneShot(domainExpansionSound);
+        for (int i = 0; i < domainExpansionSounds.Length; i++)
+        {
+            AudioSource audioSource = GetComponent<AudioSource>();
+            audioSource.PlayOneShot(domainExpansionSounds[i]);
+        }
         // Instantiate the domain sphere at the specified position
         Vector3 domainPosition = new Vector3(-576f, -69f, -13f);
         GameObject domain = Instantiate(domainPrefab, domainPosition, Quaternion.identity);
