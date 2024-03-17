@@ -1911,9 +1911,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef339237e0f2e0d4f8756c68a2c05caf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  redGiftPrefab: {fileID: 1702253018733053931, guid: 74dd802b3a04b574c9738af2eb0596d0, type: 3}
-  blueGiftPrefab: {fileID: 6597984277584766791, guid: ded8051eb13861141a3fa2059cb298e2, type: 3}
-  purpleGiftPrefab: {fileID: 1702253018733053931, guid: f251ec56159be054bab89120d0349ff3, type: 3}
+  redGiftPrefab: {fileID: 6549106833915706092, guid: 383b7018202c37040b030839d3cf7c7f, type: 3}
+  blueGiftPrefab: {fileID: 4905642597149541146, guid: b4996900ddd90b44495599d19745d17a, type: 3}
+  purpleGiftPrefab: {fileID: 6767463780011884129, guid: 544ce90acf8d30045a87d48906ab8164, type: 3}
 --- !u!114 &1939266298
 MonoBehaviour:
   m_ObjectHideFlags: 0
