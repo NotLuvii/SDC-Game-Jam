@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -55,6 +56,11 @@ public class PlayerMovement : MonoBehaviour
             rb.drag = groundDrag;
         else
             rb.drag = 0;
+
+        if (transform.position.y < -40f)
+        {
+            SceneManager.LoadScene("lose"); // Load the "lose" scene
+        }
     }
 
     private void FixedUpdate()

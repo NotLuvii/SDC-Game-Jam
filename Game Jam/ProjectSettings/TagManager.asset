@@ -7,6 +7,9 @@ TagManager:
   - RedGift
   - BlueGift
   - Domain
+  - Santa
+  - Grinch
+  - Elf
   layers:
   - Default
   - TransparentFX

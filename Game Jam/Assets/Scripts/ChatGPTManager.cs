@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using OpenAI;
-using UnityEditor.SceneManagement;
+//using UnityEditor.SceneManagement;
 using TMPro;
 
 public class ChatGPTManager : MonoBehaviour
