@@ -36,6 +36,11 @@ public class GameManager : MonoBehaviour
 
             // Update the text to display the child count
             textComponent.text = "Gifts left: " + childCount.ToString();
+
+            if (childCount == 0)
+            {
+                SceneManager.LoadScene("win");
+            }
         }
         else
         {
@@ -49,8 +54,13 @@ public class GameManager : MonoBehaviour
         }
 
         timer -= Time.deltaTime;
+
         
         timerText.text = "Time remaining: " + (int)timer;
+        if (timer <= 0)
+        {
+            SceneManager.LoadScene("PostGame");
+        }
     }
 
     // Initialize timer when the script starts
