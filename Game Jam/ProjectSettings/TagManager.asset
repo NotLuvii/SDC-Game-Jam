@@ -6,6 +6,7 @@ TagManager:
   tags:
   - RedGift
   - BlueGift
+  - Domain
   layers:
   - Default
   - TransparentFX
